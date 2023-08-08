@@ -4,8 +4,8 @@
       <div class="group">
         <h3>{{ value.title }}</h3>
         <ul>
-          <li *ngFor="let group of value.groups" (click)="onSelectGroup(group.name)"
-            [style.background-color]="selectedGroup === group.name ? '#FDD3A4' : 'transparent'">
+          <li *ngFor="let group of value.groups" (click)="onGroupClick(group.name)"
+            [style.background-color]="group.name === currentGroup?.name ? '#FDD3A4' : 'transparent'">
             {{ group.name }}
           </li>
         </ul>
@@ -16,9 +16,9 @@
       <div class="item">
         <h3>{{ value.subTitle }}</h3>
         <ul>
-          <li *ngFor="let item of selectedItems" (click)="onItemClick(item)"
-            [style.background-color]="selectedCode === item.code ? '#FDD3A4' : 'transparent'">
-            {{ item.name }}
+          <li *ngFor="let i of currentGroup?.items" (click)="onItemClick(i)"
+            [style.background-color]="i.code === item.code ? '#FDD3A4' : 'transparent'">
+            {{ i.name }}
           </li>
         </ul>
       </div>

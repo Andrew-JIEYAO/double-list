@@ -1,19 +1,19 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { DoubleSet, CodeName } from './double-set/doubleset.interface';
+import { DoubleSet, CodeName } from './double-list/doubleset.interface';
 import { ButtonModule } from 'primeng/button';
 import { DialogModule } from 'primeng/dialog';
-import { DoubleSetComponent } from "./double-set/double-set.component";
+import { DoubleListComponent } from './double-list/double-list.component';
 
 @Component({
     selector: 'app-root',
     standalone: true,
     templateUrl: './app.component.html',
     styleUrls: ['./app.component.scss'],
-    imports: [CommonModule, ButtonModule, DialogModule, DoubleSetComponent]
+    imports: [CommonModule, ButtonModule, DialogModule, DoubleListComponent]
 })
 export class AppComponent {
-  title = 'double-set';
+  title = 'double-list';
   visible: boolean = false;
   docItem = {} as CodeName;
 
