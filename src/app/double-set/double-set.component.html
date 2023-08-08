@@ -1,0 +1,27 @@
+<div>
+  <p-splitter styleClass="mb-5">
+    <ng-template pTemplate>
+      <div class="group">
+        <h3>{{ value.title }}</h3>
+        <ul>
+          <li *ngFor="let group of value.groups" (click)="onSelectGroup(group.name)"
+            [style.background-color]="selectedGroup === group.name ? '#FDD3A4' : 'transparent'">
+            {{ group.name }}
+          </li>
+        </ul>
+      </div>
+    </ng-template>
+
+    <ng-template pTemplate>
+      <div class="item">
+        <h3>{{ value.subTitle }}</h3>
+        <ul>
+          <li *ngFor="let codeName of getCodeNames(selectedGroup)" (click)="onCodeNameClick(codeName)"
+            [style.background-color]="selectedCode === codeName.code ? '#FDD3A4' : 'transparent'">
+            {{ codeName.name }}
+          </li>
+        </ul>
+      </div>
+    </ng-template>
+  </p-splitter>
+</div>
