@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CodeName, DoubleSet } from './doubleset.interface';
 import { SplitterModule } from 'primeng/splitter';
@@ -10,7 +10,7 @@ import { SplitterModule } from 'primeng/splitter';
   templateUrl: './double-set.component.html',
   styleUrls: ['./double-set.component.scss']
 })
-export class DoubleSetComponent {
+export class DoubleSetComponent implements OnInit{
 
   @Input() value = {} as DoubleSet;
   @Input() item = {} as CodeName;
@@ -18,19 +18,25 @@ export class DoubleSetComponent {
 
   selectedGroup: string = '';
   selectedCode?: string;
+  selectedItems?: CodeName[];
+
+  ngOnInit(): void {
+    this.selectedItems = this.value.groups[0].items;
+  }
 
   onSelectGroup(name: string) {
     this.selectedGroup = name;
     this.selectedCode = '';
+    this.#getItems(name);
   }
 
-  getCodeNames(name: string): CodeName[] {
-    const group = this.value.groups.find(i => i.name === name) || this.value.groups[0];
-    return group ? group.items : [];
+  #getItems(name: string) {
+    const group = this.value.groups.find(i => i.name === name);
+    this.selectedItems =  group ? group.items : [];
   }
 
-  onCodeNameClick(codeName: CodeName) {
-    this.selectedCode = codeName.code;
-    this.itemChange.emit(codeName);
+  onItemClick(item: CodeName) {
+    this.selectedCode = item.code;
+    this.itemChange.emit(item);
   }
 }

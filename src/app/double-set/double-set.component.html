@@ -16,9 +16,9 @@
       <div class="item">
         <h3>{{ value.subTitle }}</h3>
         <ul>
-          <li *ngFor="let codeName of getCodeNames(selectedGroup)" (click)="onCodeNameClick(codeName)"
-            [style.background-color]="selectedCode === codeName.code ? '#FDD3A4' : 'transparent'">
-            {{ codeName.name }}
+          <li *ngFor="let item of selectedItems" (click)="onItemClick(item)"
+            [style.background-color]="selectedCode === item.code ? '#FDD3A4' : 'transparent'">
+            {{ item.name }}
           </li>
         </ul>
       </div>
