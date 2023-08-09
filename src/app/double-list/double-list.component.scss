@@ -26,10 +26,8 @@ button {
   margin-bottom: 10px;
   border: transparent;
   position: relative;
+  background-color: transparent;
   cursor: pointer;
-  &:focus {
-    background-color: #FDD3A4;
-  }
 }
 
 .content{
@@ -47,4 +45,16 @@ button:hover .content {
   background: #346e7a;
   padding: 5px;
   border-radius: 5px;
+}
+
+.group, .item {
+  padding-left: 0.5rem;
+}
+
+.selected {
+  background-color: #FDD3A4;
+}
+
+.normal {
+  background-color: transparent;
 }

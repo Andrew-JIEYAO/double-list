@@ -1,8 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { DoubleSet, CodeName } from './double-list/doubleset.interface';
-import { ButtonModule } from 'primeng/button';
-import { DialogModule } from 'primeng/dialog';
 import { DoubleListComponent } from './double-list/double-list.component';
 
 @Component({
@@ -10,13 +8,11 @@ import { DoubleListComponent } from './double-list/double-list.component';
     standalone: true,
     templateUrl: './app.component.html',
     styleUrls: ['./app.component.scss'],
-    imports: [CommonModule, ButtonModule, DialogModule, DoubleListComponent]
+    imports: [CommonModule, DoubleListComponent]
 })
 export class AppComponent {
   title = 'double-list';
-  visible: boolean = false;
   docItem = {} as CodeName;
-
   doubleSet: DoubleSet = {
     title: '醫生姓氏',
     subTitle: '醫生',
@@ -29,8 +25,8 @@ export class AppComponent {
             "name": "王大勇"
           },
           {
-            "code": "124",
-            "name": "王小華"
+            "code": "888",
+            "name": "王大勇"
           }
         ]
       },
@@ -179,9 +175,5 @@ export class AppComponent {
       }
     ]
 
-  }
-
-  showDialog() {
-    this.visible = true;
   }
 }

@@ -4,7 +4,8 @@
       <div class="group">
         <h3>{{ value.title }}</h3>
         <ul>
-          <button *ngFor="let group of value.groups" (click)="onGroupClick(group.name)">
+          <button *ngFor="let group of value.groups" (click)="onGroupClick(group.name)"
+            [ngClass]="currentGroup?.name === group.name ? 'selected' : 'normal'">
             {{ group.name }}
           </button>
         </ul>
@@ -15,9 +16,10 @@
       <div class="item">
         <h3>{{ value.subTitle }}</h3>
         <ul>
-          <button *ngFor="let i of currentGroup?.items" (click)="onItemClick(i)">
+          <button *ngFor="let i of currentGroup?.items" (click)="onItemClick(i)"
+            [ngClass]="item.code === i.code ? 'selected' : 'normal'">
             {{ i.name }}
-            <div class="content"> 代碼：{{ i.code }}</div>
+            <div class="content"> Code : {{ i.code }}</div>
           </button>
         </ul>
       </div>
