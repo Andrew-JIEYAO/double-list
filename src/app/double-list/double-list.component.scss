@@ -5,7 +5,7 @@
 }
 
 ul,
-li {
+button {
   margin: 0%;
   padding: 0%;
   list-style: none;
@@ -17,17 +17,16 @@ ul {
   flex-wrap: wrap;
 }
 
-li {
+button {
   box-shadow: 0px 2px 1px 0px rgba(111, 121, 121, 0.25), 0px -1px 1px 1px rgba(111, 121, 121, 0.10);
   width: 5rem;
   text-align: center;
   margin-top: 10px;
   margin-right: 5px;
   margin-bottom: 10px;
-  // flex: auto;
+  border: transparent;
   cursor: pointer;
+  &:focus {
+    background-color: #FDD3A4;
+  }
 }
-
-// .group li:active {
-//   background-color: #FDD3A4;
-// }
