@@ -25,11 +25,11 @@ export class AppComponent {
         "name": "王",
         "items": [
           {
-            "code": "456",
+            "code": "123",
             "name": "王大勇"
           },
           {
-            "code": "234",
+            "code": "124",
             "name": "王小華"
           }
         ]
@@ -38,103 +38,38 @@ export class AppComponent {
         "name": "李",
         "items": [
           {
-            "code": "987",
+            "code": "125",
             "name": "李小蓮"
           },
           {
-            "code": "654",
+            "code": "126",
             "name": "李大雄"
           }
         ]
       },
       {
-        "name": "張",
+        "name": "趙",
         "items": [
           {
-            "code": "345",
-            "name": "張小芳"
+            "code": "127",
+            "name": "趙那英"
           },
           {
-            "code": "876",
-            "name": "張大明"
+            "code": "128",
+            "name": "趙明城"
           }
         ]
       },
       {
-        "name": "陳",
+        "name": "丁",
         "items": [
           {
-            "code": "876",
-            "name": "陳小蓮"
+            "code": "129",
+            "name": "丁叮噹"
           },
           {
-            "code": "987",
-            "name": "陳大鵬"
-          }
-        ]
-      },
-      {
-        "name": "林",
-        "items": [
-          {
-            "code": "567",
-            "name": "林小紅"
-          },
-          {
-            "code": "543",
-            "name": "林阿豪"
-          }
-        ]
-      },
-      {
-        "name": "吳",
-        "items": [
-          {
-            "code": "654",
-            "name": "吳小薇"
-          },
-          {
-            "code": "234",
-            "name": "吳大山"
-          }
-        ]
-      },
-      {
-        "name": "周",
-        "items": [
-          {
-            "code": "654",
-            "name": "周大島"
-          },
-          {
-            "code": "987",
-            "name": "周小倩"
-          }
-        ]
-      },
-      {
-        "name": "蔡",
-        "items": [
-          {
-            "code": "543",
-            "name": "蔡小華"
-          },
-          {
-            "code": "654",
-            "name": "蔡大勇"
-          }
-        ]
-      },
-      {
-        "name": "楊",
-        "items": [
-          {
-            "code": "987",
-            "name": "楊大雄"
-          },
-          {
-            "code": "234",
-            "name": "楊小蓮"
+            "code": "130",
+            "name": "丁小雨"
           }
         ]
       },
@@ -142,90 +77,25 @@ export class AppComponent {
         "name": "劉",
         "items": [
           {
-            "code": "234",
-            "name": "劉小芳"
+            "code": "131",
+            "name": "劉阿嬌"
           },
           {
-            "code": "876",
-            "name": "劉大明"
+            "code": "132",
+            "name": "劉小明"
           }
         ]
       },
       {
-        "name": "葉",
+        "name": "林",
         "items": [
           {
-            "code": "876",
-            "name": "葉小芳"
+            "code": "133",
+            "name": "林小蓮"
           },
           {
-            "code": "234",
-            "name": "葉大明"
-          }
-        ]
-      },
-      {
-        "name": "呂",
-        "items": [
-          {
-            "code": "567",
-            "name": "呂大島"
-          },
-          {
-            "code": "543",
-            "name": "呂小琳"
-          }
-        ]
-      },
-      {
-        "name": "江",
-        "items": [
-          {
-            "code": "234",
-            "name": "江大勇"
-          },
-          {
-            "code": "876",
-            "name": "江小薇"
-          }
-        ]
-      },
-      {
-        "name": "許",
-        "items": [
-          {
-            "code": "987",
-            "name": "許小島"
-          },
-          {
-            "code": "234",
-            "name": "許大琳"
-          }
-        ]
-      },
-      {
-        "name": "徐",
-        "items": [
-          {
-            "code": "654",
-            "name": "徐小山"
-          },
-          {
-            "code": "234",
-            "name": "徐大紅"
-          }
-        ]
-      },
-      {
-        "name": "鄭",
-        "items": [
-          {
-            "code": "876",
-            "name": "鄭小蓮"
-          },
-          {
-            "code": "543",
-            "name": "鄭大山"
+            "code": "134",
+            "name": "林大雄"
           }
         ]
       },
@@ -233,16 +103,82 @@ export class AppComponent {
         "name": "黃",
         "items": [
           {
-            "code": "654",
-            "name": "黃小芳"
+            "code": "135",
+            "name": "黃阿嬌"
           },
           {
-            "code": "987",
-            "name": "黃大雄"
+            "code": "136",
+            "name": "黃小明"
+          }
+        ]
+      },
+      {
+        "name": "周",
+        "items": [
+          {
+            "code": "137",
+            "name": "周小蓮"
+          },
+          {
+            "code": "138",
+            "name": "周大雄"
+          }
+        ]
+      },
+      {
+        "name": "吳",
+        "items": [
+          {
+            "code": "139",
+            "name": "吳阿嬌"
+          },
+          {
+            "code": "140",
+            "name": "吳小明"
+          }
+        ]
+      },
+      {
+        "name": "謝",
+        "items": [
+          {
+            "code": "141",
+            "name": "謝阿花"
+          },
+          {
+            "code": "142",
+            "name": "謝謝你"
+          }
+        ]
+      },
+      {
+        "name": "陳",
+        "items": [
+          {
+            "code": "143",
+            "name": "陳阿嬌"
+          },
+          {
+            "code": "144",
+            "name": "陳小明"
+          }
+        ]
+      },
+      {
+        "name": "張",
+        "items": [
+          {
+            "code": "145",
+            "name": "張小蓮"
+          },
+          {
+            "code": "146",
+            "name": "張大雄"
           }
         ]
       }
     ]
+
   }
 
   showDialog() {
