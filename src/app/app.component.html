@@ -1,8 +1,13 @@
-<his-double-list [value]="doubleSet" [(item)]="docItem"></his-double-list>
+<div class="card flex justify-content-center">
+  <p-button icon="pi pi-external-link" label="姓氏" (click)="showDialog()"></p-button>
+  <p-dialog header="選取醫師" [(visible)]="visible" [style]="{width: '50vw'}">
+    <his-double-list [value]="doubleSet" [(item)]="docItem"></his-double-list>
+  </p-dialog>
+</div>
 
 <div>
-  <p>選擇的Name:</p>
-  <p>{{ docItem.name }}</p>
-  <p>選擇的Code:</p>
+  <p>選擇的display:</p>
+  <p>{{ docItem.display }}</p>
+  <p>選擇的code:</p>
   <p>{{ docItem.code }}</p>
 </div>

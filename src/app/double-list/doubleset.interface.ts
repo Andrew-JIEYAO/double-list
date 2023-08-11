@@ -6,10 +6,13 @@ export interface DoubleSet {
 
 export interface Group {
   name: string;
-  items: CodeName[];
+  items: Coding[];
 }
 
-export interface CodeName {
-  name: string;
+export interface Coding {
+  system?: string;
+  version?: string;
   code: string;
+  display: string;
+  userSelected?: boolean;
 }

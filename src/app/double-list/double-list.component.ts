@@ -1,6 +1,6 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { NgClass, NgFor } from '@angular/common';
-import { CodeName, DoubleSet, Group } from './doubleset.interface';
+import { Coding, DoubleSet, Group } from './doubleset.interface';
 import { SplitterModule } from 'primeng/splitter';
 
 @Component({
@@ -13,8 +13,8 @@ import { SplitterModule } from 'primeng/splitter';
 export class DoubleListComponent implements OnInit{
 
   @Input() value = {} as DoubleSet;
-  @Input() item = {} as CodeName;
-  @Output() itemChange = new EventEmitter<CodeName>();
+  @Input() item = {} as Coding;
+  @Output() itemChange = new EventEmitter<Coding>();
 
   currentGroup?: Group;
 
@@ -26,7 +26,7 @@ export class DoubleListComponent implements OnInit{
     this.currentGroup =this.value.groups.find(x=>x.name === groupName);
   }
 
-  onItemClick(item: CodeName) {
+  onItemClick(item: Coding) {
     this.itemChange.emit(item);
   }
 }

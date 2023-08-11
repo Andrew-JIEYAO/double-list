@@ -1,5 +1,5 @@
 <div>
-  <p-splitter styleClass="mb-5">
+  <p-splitter styleClass="mb-5" [panelSizes]="[34, 66]">
     <ng-template pTemplate>
       <div class="group">
         <h3>{{ value.title }}</h3>
@@ -16,10 +16,10 @@
       <div class="item">
         <h3>{{ value.subTitle }}</h3>
         <ul>
-          <button *ngFor="let i of currentGroup?.items" (click)="onItemClick(i)"
-            [ngClass]="item.code === i.code ? 'selected' : 'normal'">
-            {{ i.name }}
-            <div class="content"> Code : {{ i.code }}</div>
+          <button *ngFor="let currentItem of currentGroup?.items" (click)="onItemClick(currentItem)"
+            [ngClass]="item.code === currentItem.code ? 'selected' : 'normal'">
+            {{ currentItem.display }}
+            <div class="content"> {{ currentItem.code }} : {{ currentItem.display }}</div>
           </button>
         </ul>
       </div>
